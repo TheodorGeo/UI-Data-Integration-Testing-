@@ -66,20 +66,6 @@ $(function(){
             });
           });
 
-          $('#trello_download').on('click', function(){
-            var element = document.createElement("a");
-            download_id ++;
-            element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(JSON.stringify(data, undefined, 2)));
-            element.setAttribute('download', 'data.json');
-            element.setAttribute('id', download_id);
-
-            element.style.display = 'none';
-            document.body.appendChild(element);
-
-            element.click();
-
-            document.body.removeChild(element);
-          });
         }
 
       })
@@ -89,6 +75,21 @@ $(function(){
     }
 
   })
+
+  $('#trello_download').on('click', function(){
+    var element = document.createElement("a");
+    download_id ++;
+    element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent($('#trello_json').text()));
+    element.setAttribute('download', 'data.json');
+    element.setAttribute('id', download_id);
+
+    element.style.display = 'none';
+    document.body.appendChild(element);
+
+    element.click();
+
+    document.body.removeChild(element);
+  });
 
 
   $('#trello_help').on('click', function(){
