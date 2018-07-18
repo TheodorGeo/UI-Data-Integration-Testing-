@@ -70,6 +70,7 @@ $(function(){
 
       })
       .fail(function(){
+        $('#loading_spinner').fadeOut(600);
         flash('Ooops something went wrong ...', {bgColor:'rgb(255, 56, 96)'});
       });
     }
@@ -92,7 +93,8 @@ $(function(){
   });
 
 
-  $('#trello_help').on('click', function(){
+  $('#trello_help').on('click', function(e){
+    e.preventDefault();
     $('#trello_help_modal').addClass('is-active');
     $('#trello_help_modal .modal-background').on('click', function(){
       $('#trello_help_modal').removeClass('is-active');
