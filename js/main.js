@@ -4,3 +4,8 @@ $(function(){
 
 
 });
+
+
+// Default settings
+
+var server_address = "http://localhost:8000";

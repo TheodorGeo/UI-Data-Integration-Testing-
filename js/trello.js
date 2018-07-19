@@ -23,8 +23,6 @@ $(function(){
       fields_query = fields_query+','+field
     });
 
-    console.log(fields_query);
-
     var data = {
       token,
       short_link,
@@ -45,7 +43,7 @@ $(function(){
     }else {
       $('#loading_spinner').fadeIn(600);
       $.ajax({
-        url: "http://localhost:8000/api/trello/board/shortlink/"+data.short_link+"?token="+data.token+"&fields="+fields_query,
+        url: server_address+"/api/trello/board/shortlink/"+data.short_link+"?token="+data.token+"&fields="+fields_query,
         method: 'GET',
       })
       .done(function(data){
@@ -67,7 +65,6 @@ $(function(){
           });
 
         }
-
       })
       .fail(function(){
         $('#loading_spinner').fadeOut(600);
