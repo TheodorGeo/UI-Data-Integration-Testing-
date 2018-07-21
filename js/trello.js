@@ -4,7 +4,8 @@ $(function(){
 
   $('#trello_submit').on('click', function(e){
 
-    $('#trello_results_buttons').addClass('hidden');
+    $('#trello_results_buttons').addClass('is-hidden-tablet');
+    $('#trello_results_buttons').addClass('is-hidden-mobile');
     e.preventDefault();
 
 
@@ -53,7 +54,8 @@ $(function(){
             flash(error, {bgColor:'rgb(255, 56, 96)'});
           });
         }else {
-          $('#trello_results_buttons').removeClass('hidden');
+          $('#trello_results_buttons').removeClass('is-hidden-tablet');
+          $('#trello_results_buttons').removeClass('is-hidden-mobile');
           $('#trello_json').text(JSON.stringify(data, undefined, 2));
           flash('You can review the generated json', {bgColor: 'rgb(0, 209, 178)'});
 
@@ -98,4 +100,4 @@ $(function(){
     });
   });
 
-})
+});
