@@ -8,4 +8,9 @@ For making this app working, it is required to change to servers address in the 
 Technologies used in this project:
 - JQuery 3.3.1
 - Bulma CSS framework
-- [flash.js](https://github.com/TheodorGeo/flash.js) 
+- [flash.js](https://github.com/TheodorGeo/flash.js)
+
+License
+----
+
+MIT
