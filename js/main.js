@@ -17,6 +17,7 @@ $(function(){
 
 // Default settings
 
+//Before start using this app change the server's address (ip or domain name)
 var server_address = "http://localhost:8000";
 var tabs = {
   trello_tab: {
