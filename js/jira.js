@@ -78,7 +78,6 @@ $(function(){
       })
       .fail(function(data){
         $('#loading_spinner').fadeOut(600);
-        console.log('asdasd');
         flash('Ooops something went wrong ...', {bgColor:'rgb(255, 56, 96)'});
       });
     }
