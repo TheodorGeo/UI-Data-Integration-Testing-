@@ -1,6 +1,6 @@
-####  Simple UI for testing [Data Integration Project](https://gitlab.com/theodor_g/data_integ_api)
+####  Simple UI for testing [Data Integration Project](https://github.com/TheodorGeo/data_integ_api)
 
-This is a simple single page application to test the [Data Integration Project](https://gitlab.com/theodor_g/data_integ_api) .
+This is a simple single page application to test the [Data Integration Project](https://github.com/TheodorGeo/data_integ_api) .
 
 For making this app working, it is required to change to servers address in the main.js file at line 21.
 
